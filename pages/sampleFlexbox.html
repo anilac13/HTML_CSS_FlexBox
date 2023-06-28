@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Demo</title>
+    <style>
+        .header-container {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .footer-container {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .main-container {
+            display: flex;
+            flex-flow: row;
+            font-weight: bold;
+            text-align: center;
+        }
+        .sidebar-left-item {
+            background: gold;
+            order: 1;
+        }
+        .sidebar-right-item {
+            background: hotpink;
+            order: 3;
+        }
+        .main-container-items {
+            background: deepskyblue;
+            text-align: left;
+            order: 2;
+            flex: 3 0px;
+        }
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+        .sidebar-item {
+            flex: 1 0 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-container"><h1>HEADER - Sample FlexBox Example</h1></header>
+    <div class="main-container">
+        <section class="main-container-items">
+            <article>
+                <h2>First Article</h2>
+                <p>
+                    Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+                    vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+                    single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth
+                    gastropub bammock.  
+                </p>
+            </article>
+            <article>
+                <h2>Second Article</h2>
+                <p>
+                    Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+                    vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+                    single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth
+                    gastropub bammock.  
+                </p>
+            </article>
+            <article>
+                <h2>Third Article</h2>
+                <p>
+                    Working together to keep the tech employability of engineers alive and accessible, so Tech Companies worldwide can get 
+                    contributors and creators for technology solution. We believe this act of human collabration accross an 
+                    employabilityplatform is essent to individual growth and our collective future.
+                    
+                    Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry
+                    vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+                    single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth
+                    gastropub bammock.
+                </p>
+            </article>
+        </section>
+        <sidebar class="sidebar-item sidebar-left-item"><div class="center"><p>Left Side Bar</p></div></sidebar>
+        <sidebar class="sidebar-item sidebar-right-item"><div class="center"><p>Right Side Bar</p></div></sidebar>
+    </div>
+    <footer class="footer-container"><h2>Footer</h2></footer>
+</body>
+</html>
